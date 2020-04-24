@@ -1,0 +1,8 @@
+#time,event,comp,thread,uid,state,msg
+1586145131.6720753,sync_abs,cmgr.0000,MainThread,,,login5.summit.olcf.ornl.gov:10.134.0.35:1586145131.671405:1586145131.6785522:ntp
+1586145131.6723745,init2,cmgr.0000,MainThread,cmgr.0000,,/gpfs/alpine/geo111/world-shared/lei/entk/re.session.login5.lei.018358.0000
+1586145131.7273116,start_bridges_start,cmgr.0000,MainThread,cmgr.0000,,
+1586145133.8245680,start_bridges_stop,cmgr.0000,MainThread,cmgr.0000,,
+1586145133.8246348,start_components_start,cmgr.0000,MainThread,cmgr.0000,,
+1586145135.9101169,start_components_stop,cmgr.0000,MainThread,cmgr.0000,,
+1586153694.8639889,close,cmgr.0000,MainThread,cmgr.0000,,

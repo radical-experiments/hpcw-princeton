@@ -1,0 +1,12 @@
+#time,event,comp,thread,uid,state,msg
+1586153577.3034232,sync_abs,umgr_staging_input.0000,MainThread,,,login5.summit.olcf.ornl.gov:10.134.0.35:1586153577.303068:1586153577.383592:ntp
+1586153577.3047910,comp_start,umgr_staging_input.0000,MainThread,umgr_staging_input.0000,,
+#time,event,comp,thread,uid,state,msg
+1586153577.6079917,sync_abs,umgr_staging_input.0000,MainThread,,,login5.summit.olcf.ornl.gov:10.134.0.35:1586153577.6078372:1586153577.6883612:ntp
+1586153577.6080549,init1,umgr_staging_input.0000,MainThread,umgr_staging_input.0000,,/gpfs/alpine/geo111/world-shared/lei/entk/re.session.login5.lei.018358.0000
+1586153577.6745296,component_init,umgr_staging_input.0000,Thread-1,,,
+1586153592.1828415,get,umgr_staging_input.0000,Thread-1,unit.000000,UMGR_STAGING_INPUT_PENDING,
+1586153592.1829650,advance,umgr_staging_input.0000,Thread-1,unit.000000,UMGR_STAGING_INPUT,
+1586153604.0847001,advance,umgr_staging_input.0000,Thread-1,unit.000000,AGENT_STAGING_INPUT_PENDING,
+1586153750.0725183,component_final,umgr_staging_input.0000,Thread-3,,,
+1586153750.0725520,END,umgr_staging_input.0000,Thread-3,,,

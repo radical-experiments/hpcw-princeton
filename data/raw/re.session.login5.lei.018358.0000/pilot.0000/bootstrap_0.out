@@ -1,0 +1,705 @@
+Hello, on Summit
+bootstrap_0 stderr redirected to stdout
+---------------------------------------------------------------------
+bootstrap_0 running on host: batch5.summit.olcf.ornl.gov.
+bootstrap_0 started as     : '/gpfs/alpine/scratch/lei/geo111/radical.pilot.sandbox/re.session.login5.lei.018358.0000/bootstrap_0.sh -d radical.utils-1.1.1.tar.gz:radical.saga-1.1.2.tar.gz:radical.pilot-1.1.1-devel-no-bulk-cb-hotfix-entk-hangup.tar.gz -p pilot.0000 -s re.session.login5.lei.018358.0000 -m create -r local -b default -g default -v /gpfs/alpine/scratch/lei/geo111/radical.pilot.sandbox/ve.ornl.summit.1.1.1 -y 5 -e module unload xl -e module unload xalt -e module unload spectrum-mpi -e module load   gcc/6.4.0 -e module load   python/3.7.0 -e module load   py-virtualenv/16.0.0 -e module load   py-setuptools/40.2.0-py3 -e module load   zeromq/4.2.5 -w module unload xl -w module unload xalt -w module unload spectrum-mpi -w module load   gcc/6.4.0 -w module load   python/3.7.0 -w module load   py-virtualenv/16.0.0 -w module load   py-setuptools/40.2.0-py3 -w module load   zeromq/4.2.5 -w ulimit -u 65536'
+Environment of bootstrap_0 process:
+BASH_ENV=/sw/summit/lmod/8.2.10/init/bash
+BASH_FUNC_ml()=() {  eval $($LMOD_DIR/ml_cmd "$@")
+BASH_FUNC_module()=() {  eval $($LMOD_CMD bash "$@") && eval $(${LMOD_SETTARG_CMD:-:} -s sh)
+BINARY_TYPE_HPC=
+BSUB_BLOCK_EXEC_HOST=
+CMAKE_PREFIX_PATH=/autofs/nccs-svm1_sw/summit/.swci/0-core/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/tmux-2.2-z2cgytxdo3rzw643uj2fiwp7iwqbbbwp:/autofs/nccs-svm1_sw/summit/.swci/0-core/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/vim-8.1.0338-shbim6fc5yqhqcv6ewywvtbjc6o2fcuo:/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/adios-1.13.1-ux5cr5krnt2eytkd34ivmytf7jj64i7p:/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/c-blosc-1.12.1-q6vbonvkwov7mno5rcss5tngjsdrmmwm:/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/zfp-0.5.2-6ug2rhyxwribif25cwxah2g3lpjf53qy:/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/sz-1.4.12.3-gs7uitnsexlvkneqdgcrbjuedtpcqtbt:/autofs/nccs-svm1_sw/summit/.swci/0-core/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/zlib-1.2.11-4v3ticyykh2xcgw5fzltjrfuxkx7ipqh:/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/hdf5-1.8.18-ddwngazfm5dozvji2sueaz5ye35im4in:/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/darshan-runtime-3.1.7-cnvxicgf5j4ap64qi6v5gxp67hmrjz43:/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/spectrum-mpi-10.3.1.2-20200121-tvzx7uja3kmwouk4uzfem5ttugc6bkiz
+CONDA_DEFAULT_ENV=summit-entk
+CONDA_EXE=/sw/summit/python/3.7/anaconda3/5.3.0/bin/conda
+CONDA_PREFIX=/ccs/home/lei/.conda/envs/summit-entk
+CONDA_PROMPT_MODIFIER=(summit-entk) 
+CONDA_PYTHON_EXE=/sw/summit/python/3.7/anaconda3/5.3.0/bin/python
+CONDA_SHLVL=1
+CPATH=/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/adios-1.13.1-ux5cr5krnt2eytkd34ivmytf7jj64i7p/include:/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/c-blosc-1.12.1-q6vbonvkwov7mno5rcss5tngjsdrmmwm/include:/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/zfp-0.5.2-6ug2rhyxwribif25cwxah2g3lpjf53qy/include:/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/sz-1.4.12.3-gs7uitnsexlvkneqdgcrbjuedtpcqtbt/include:/autofs/nccs-svm1_sw/summit/.swci/0-core/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/zlib-1.2.11-4v3ticyykh2xcgw5fzltjrfuxkx7ipqh/include:/sw/summit/cuda/10.1.243/include:/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/hdf5-1.8.18-ddwngazfm5dozvji2sueaz5ye35im4in/include:/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/spectrum-mpi-10.3.1.2-20200121-tvzx7uja3kmwouk4uzfem5ttugc6bkiz/include
+CSM_ALLOCATION_ID=1028283
+CUDAPATH=/sw/summit/cuda/10.1.243
+CUDA_DIR=/sw/summit/cuda/10.1.243
+CUDA_TOOLKIT_ROOT_DIR=/sw/summit/cuda/10.1.243
+CVS_RSH=ssh
+DISPLAY=login5:20.0
+HISTCONTROL=ignoredups
+HISTSIZE=1000
+HOME=/ccs/home/lei
+HOSTNAME=batch5
+HOSTTYPE=LINUXPPC64LE
+JOB_TERMINATE_INTERVAL=10
+JSM_JSRUN_NO_WARN_TOPOLOGY=1
+LD_LIBRARY_PATH=/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/adios-1.13.1-ux5cr5krnt2eytkd34ivmytf7jj64i7p/lib:/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/c-blosc-1.12.1-q6vbonvkwov7mno5rcss5tngjsdrmmwm/lib:/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/zfp-0.5.2-6ug2rhyxwribif25cwxah2g3lpjf53qy/lib:/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/sz-1.4.12.3-gs7uitnsexlvkneqdgcrbjuedtpcqtbt/lib:/autofs/nccs-svm1_sw/summit/.swci/0-core/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/zlib-1.2.11-4v3ticyykh2xcgw5fzltjrfuxkx7ipqh/lib:/sw/summit/cuda/10.1.243/lib64:/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/hdf5-1.8.18-ddwngazfm5dozvji2sueaz5ye35im4in/lib:/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/darshan-runtime-3.1.7-cnvxicgf5j4ap64qi6v5gxp67hmrjz43/lib:/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/spectrum-mpi-10.3.1.2-20200121-tvzx7uja3kmwouk4uzfem5ttugc6bkiz/lib:/opt/ibm/spectrumcomputing/lsf/10.1.0.9/linux3.10-glibc2.17-ppc64le-csm/lib:/opt/ibm/spectrum_mpi/jsm_pmix/lib
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LIBRARY_PATH=/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/adios-1.13.1-ux5cr5krnt2eytkd34ivmytf7jj64i7p/lib:/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/c-blosc-1.12.1-q6vbonvkwov7mno5rcss5tngjsdrmmwm/lib:/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/zfp-0.5.2-6ug2rhyxwribif25cwxah2g3lpjf53qy/lib:/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/sz-1.4.12.3-gs7uitnsexlvkneqdgcrbjuedtpcqtbt/lib:/autofs/nccs-svm1_sw/summit/.swci/0-core/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/zlib-1.2.11-4v3ticyykh2xcgw5fzltjrfuxkx7ipqh/lib:/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/hdf5-1.8.18-ddwngazfm5dozvji2sueaz5ye35im4in/lib:/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/darshan-runtime-3.1.7-cnvxicgf5j4ap64qi6v5gxp67hmrjz43/lib:/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/spectrum-mpi-10.3.1.2-20200121-tvzx7uja3kmwouk4uzfem5ttugc6bkiz/lib
+LMOD_CMD=/sw/summit/lmod/8.2.10/libexec/lmod
+LMOD_DIR=/sw/summit/lmod/8.2.10/libexec
+LMOD_FAMILY_COMPILER=gcc
+LMOD_FAMILY_COMPILER_VERSION=4.8.5
+LMOD_FAMILY_MPI=spectrum-mpi
+LMOD_FAMILY_MPI_VERSION=10.3.1.2-20200121
+LMOD_MPI_NAME=spectrum-mpi
+LMOD_MPI_VERSION=10.3.1.2-20200121-tvzx7uj
+LMOD_PKG=/sw/summit/lmod/8.2.10
+LMOD_ROOT=/sw/summit/lmod
+LMOD_SETTARG_FULL_SUPPORT=no
+LMOD_SYSTEM_DEFAULT_MODULES=DefApps
+LMOD_SYSTEM_NAME=summit
+LMOD_VERSION=8.2.10
+LMOD_sys=Linux
+LOADEDMODULES=hsi/5.0.2.p5:xalt/1.2.0:lsf-tools/2.0:DefApps:gcc/4.8.5:spectrum-mpi/10.3.1.2-20200121:darshan-runtime/3.1.7:hdf5/1.8.18:cuda/10.1.243:zlib/1.2.11:sz/1.4.12.3:zfp/0.5.2:c-blosc/1.12.1:adios/1.13.1-py2:vim/8.1.0338:tmux/2.2:python/3.7.0-anaconda3-5.3.0
+LOGNAME=lei
+LSB_ACCT_FILE=/tmp/18701.tmpdir/.1586145200.18701.acct
+LSB_AFFINITY_HOSTFILE=/ccs/home/lei/.lsbatch/1586145200.18701.hostAffinityFile
+LSB_APPLICATION_NAME=small
+LSB_BATCH_JID=18701
+LSB_CHKFILENAME=/ccs/home/lei/.lsbatch/1586145200.18701
+LSB_DJOB_HOSTFILE=/ccs/home/lei/.lsbatch/1586145200.18701.hostfile
+LSB_DJOB_NUMPROC=2689
+LSB_DJOB_RANKFILE=/ccs/home/lei/.lsbatch/1586145200.18701.hostfile
+LSB_ECHKPNT_RSH_CMD=ssh -o 'PasswordAuthentication no' -o 'StrictHostKeyChecking no'
+LSB_EEXEC_REAL_GID=
+LSB_EEXEC_REAL_UID=
+LSB_EFFECTIVE_RSRCREQ=1*{select[((LN) && (type == any))] order[r15s:pg] span[hosts=1] cu[type=rack:pref=config]}+2688*{select[((CN) && (type == any))] order[r15s:pg] span[ptile=42] cu[type=rack:pref=config]}
+LSB_ERRORFILE=/gpfs/alpine/scratch/lei/geo111/radical.pilot.sandbox/re.session.login5.lei.018358.0000/pilot.0000/bootstrap_0.err
+LSB_EXEC_CLUSTER=summit
+LSB_EXEC_HOSTTYPE=LINUXPPC64LE
+LSB_EXIT_PRE_ABORT=99
+LSB_JOBEXIT_STAT=0
+LSB_JOBFILENAME=/ccs/home/lei/.lsbatch/1586145200.18701
+LSB_JOBID=18701
+LSB_JOBINDEX=0
+LSB_JOBNAME=pilot.0000
+LSB_JOBRES_CALLBACK=53203@batch5
+LSB_JOBRES_PID=55904
+LSB_JOB_EXECUSER=lei
+LSB_MAX_NUM_PROCESSORS=2689
+LSB_MCPU_HOSTS=batch5 1 h15n14 42 h20n11 42 h20n12 42 h20n13 42 h20n14 42 h20n15 42 h20n16 42 h20n17 42 h20n18 42 h21n01 42 h21n02 42 h21n03 42 h21n04 42 h21n05 42 h21n06 42 h21n07 42 h21n08 42 h21n09 42 h21n10 42 h21n11 42 h21n12 42 h21n13 42 h21n14 42 h21n15 42 h21n16 42 h21n17 42 h21n18 42 h23n01 42 h23n02 42 h23n03 42 h23n04 42 h23n05 42 h23n06 42 h23n07 42 h23n08 42 h23n09 42 h23n10 42 h23n11 42 h23n12 42 h23n13 42 h23n14 42 h23n15 42 h23n16 42 h23n17 42 h23n18 42 h25n01 42 h25n02 42 h25n03 42 h25n04 42 h28n16 42 h28n17 42 h28n18 42 h30n01 42 h30n02 42 h30n03 42 h30n04 42 h30n05 42 h30n06 42 h30n07 42 h30n08 42 h30n09 42 h30n10 42 h30n11 42 h30n12 42 
+LSB_OUTDIR=/ccs/home/lei
+LSB_OUTPUTFILE=/gpfs/alpine/scratch/lei/geo111/radical.pilot.sandbox/re.session.login5.lei.018358.0000/pilot.0000/bootstrap_0.out
+LSB_PROJECT_NAME=GEO111
+LSB_QUEUE=batch
+LSB_RES_GET_FANOUT_INFO=Y
+LSB_SUB_HOST=login5
+LSB_SUB_RES_REQ=1*{select[LN]span[hosts=1]} + 2688*{select[CN]span[ptile=42]}
+LSB_SUB_USER=lei
+LSB_TRAPSIGS=trap # 15 10 12 2 1
+LSB_UNIXGROUP_INT=lei
+LSB_XFER_OP=
+LSFUSER=lei
+LSF_BINDIR=/opt/ibm/spectrumcomputing/lsf/10.1.0.9/linux3.10-glibc2.17-ppc64le-csm/bin
+LSF_CGROUP_TOPDIR_KEY=summit
+LSF_ENVDIR=/opt/ibm/spectrumcomputing/lsf/conf
+LSF_INVOKE_CMD=bsub
+LSF_JOB_TIMESTAMP_VALUE=1586153504
+LSF_LIBDIR=/opt/ibm/spectrumcomputing/lsf/10.1.0.9/linux3.10-glibc2.17-ppc64le-csm/lib
+LSF_LIM_API_NTRIES=1
+LSF_LOGDIR=/var/log/lsf
+LSF_SERVERDIR=/opt/ibm/spectrumcomputing/lsf/10.1.0.9/linux3.10-glibc2.17-ppc64le-csm/etc
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36::di=1;34::di=1;34:
+LS_EXECCWD=/gpfs/alpine/scratch/lei/geo111/radical.pilot.sandbox/re.session.login5.lei.018358.0000/pilot.0000
+LS_EXEC_T=START
+LS_JOBPID=55904
+LS_OPTIONS=-N --color -T 0
+LS_SUBCWD=/ccs/home/lei/
+MAIL=/var/spool/mail/lei
+MAKEFLAGS=-j
+MANPATH=/sw/summit/python/3.7/anaconda3/5.3.0/share/man:/autofs/nccs-svm1_sw/summit/.swci/0-core/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/tmux-2.2-z2cgytxdo3rzw643uj2fiwp7iwqbbbwp/share/man:/autofs/nccs-svm1_sw/summit/.swci/0-core/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/vim-8.1.0338-shbim6fc5yqhqcv6ewywvtbjc6o2fcuo/share/man:/autofs/nccs-svm1_sw/summit/.swci/0-core/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/zlib-1.2.11-4v3ticyykh2xcgw5fzltjrfuxkx7ipqh/share/man:/sw/summit/cuda/10.1.243/doc/man:/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/spectrum-mpi-10.3.1.2-20200121-tvzx7uja3kmwouk4uzfem5ttugc6bkiz/share/man:/sw/sources/hpss/man:/sw/summit/lmod/8.2.10/share/man:/opt/ibm/spectrumcomputing/lsf/10.1.0.9/man::/opt/puppetlabs/puppet/share/man
+MEMBERWORK=/gpfs/alpine/scratch/lei
+MODULEPATH=/autofs/nccs-svm1_sw/summit/modulefiles/site/linux-rhel7-ppc64le/spectrum-mpi/10.3.1.2-20200121-tvzx7uj/gcc/4.8.5:/sw/summit/modulefiles/site/linux-rhel7-ppc64le/gcc/4.8.5:/sw/summit/modulefiles/site/linux-rhel7-ppc64le/Core:/sw/summit/modulefiles/core
+MODULEPATH_ROOT=/sw/summit/modulefiles
+MODULESHOME=/sw/summit/lmod/8.2.10
+MPI_ROOT=/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/spectrum-mpi-10.3.1.2-20200121-tvzx7uja3kmwouk4uzfem5ttugc6bkiz
+OLCF_ADIOS_ROOT=/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/adios-1.13.1-ux5cr5krnt2eytkd34ivmytf7jj64i7p
+OLCF_CUDA_ROOT=/sw/summit/cuda/10.1.243
+OLCF_C_BLOSC_ROOT=/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/c-blosc-1.12.1-q6vbonvkwov7mno5rcss5tngjsdrmmwm
+OLCF_DARSHAN_RUNTIME_ROOT=/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/darshan-runtime-3.1.7-cnvxicgf5j4ap64qi6v5gxp67hmrjz43
+OLCF_FAMILY_COMPILER=gcc
+OLCF_FAMILY_COMPILER_VERSION=4.8.5
+OLCF_FAMILY_MPI=spectrum-mpi
+OLCF_FAMILY_MPI_VERSION=10.3.1.2-20200121
+OLCF_GCC_ROOT=/usr
+OLCF_HDF5_ROOT=/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/hdf5-1.8.18-ddwngazfm5dozvji2sueaz5ye35im4in
+OLCF_HSI_ROOT=/sw/sources/hpss
+OLCF_LMOD_ROOT=/sw/summit
+OLCF_MODULEPATH_ROOT=/sw/summit/modulefiles
+OLCF_PYTHON_ANACONDA3_ROOT=/sw/summit/python/3.7/anaconda3/5.3.0
+OLCF_SPECTRUM_MPI_ROOT=/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/spectrum-mpi-10.3.1.2-20200121-tvzx7uja3kmwouk4uzfem5ttugc6bkiz
+OLCF_SZ_ROOT=/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/sz-1.4.12.3-gs7uitnsexlvkneqdgcrbjuedtpcqtbt
+OLCF_TMUX_ROOT=/autofs/nccs-svm1_sw/summit/.swci/0-core/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/tmux-2.2-z2cgytxdo3rzw643uj2fiwp7iwqbbbwp
+OLCF_VIM_ROOT=/autofs/nccs-svm1_sw/summit/.swci/0-core/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/vim-8.1.0338-shbim6fc5yqhqcv6ewywvtbjc6o2fcuo
+OLCF_ZFP_ROOT=/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/zfp-0.5.2-6ug2rhyxwribif25cwxah2g3lpjf53qy
+OLCF_ZLIB_ROOT=/autofs/nccs-svm1_sw/summit/.swci/0-core/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/zlib-1.2.11-4v3ticyykh2xcgw5fzltjrfuxkx7ipqh
+OMPI_CC=/usr/bin/gcc
+OMPI_CXX=/usr/bin/g++
+OMPI_DIR=/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/spectrum-mpi-10.3.1.2-20200121-tvzx7uja3kmwouk4uzfem5ttugc6bkiz
+OMPI_FC=/usr/bin/gfortran
+OMPI_LD_PRELOAD_PREPEND=/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/darshan-runtime-3.1.7-cnvxicgf5j4ap64qi6v5gxp67hmrjz43/lib/libdarshan.so
+OMPI_MCA_io=romio321
+OPAL_LIBDIR=/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/spectrum-mpi-10.3.1.2-20200121-tvzx7uja3kmwouk4uzfem5ttugc6bkiz/lib
+OPAL_PREFIX=/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/spectrum-mpi-10.3.1.2-20200121-tvzx7uja3kmwouk4uzfem5ttugc6bkiz
+PAMI_CUDA_AWARE_THRESH=320000
+PAMI_ENABLE_STRIPING=0
+PAMI_IBV_ADAPTER_AFFINITY=1
+PAMI_IBV_ENABLE_DCT=1
+PAMI_IBV_ENABLE_OOO_AR=1
+PAMI_IBV_QP_SERVICE_LEVEL=8
+PATH=/ccs/home/lei/software/summit/conda/summit-entk/erlang-opt_src_22.2/bin:/sw/sources/lsf-tools/2.0/summit/bin:/sw/summit/xalt/1.2.0/bin:/sw/summit/python/3.7/anaconda3/5.3.0/bin:/autofs/nccs-svm1_sw/summit/.swci/0-core/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/tmux-2.2-z2cgytxdo3rzw643uj2fiwp7iwqbbbwp/bin:/autofs/nccs-svm1_sw/summit/.swci/0-core/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/vim-8.1.0338-shbim6fc5yqhqcv6ewywvtbjc6o2fcuo/bin:/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/adios-1.13.1-ux5cr5krnt2eytkd34ivmytf7jj64i7p/bin:/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/sz-1.4.12.3-gs7uitnsexlvkneqdgcrbjuedtpcqtbt/bin:/sw/summit/cuda/10.1.243/bin:/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/hdf5-1.8.18-ddwngazfm5dozvji2sueaz5ye35im4in/bin:/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/darshan-runtime-3.1.7-cnvxicgf5j4ap64qi6v5gxp67hmrjz43/bin:/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/spectrum-mpi-10.3.1.2-20200121-tvzx7uja3kmwouk4uzfem5ttugc6bkiz/bin:/usr/bin:/usr/sbin:/opt/ibm/csm/bin:/opt/ibm/spectrumcomputing/lsf/10.1.0.9/linux3.10-glibc2.17-ppc64le-csm/bin:/ccs/home/lei/software/summit/conda/summit-entk/erlang-opt_src_22.2/bin:/ccs/home/lei/.conda/envs/summit-entk/bin:/sw/sources/hpss/bin:/opt/ibm/spectrumcomputing/lsf/10.1.0.9/linux3.10-glibc2.17-ppc64le-csm/etc:/usr/local/bin:/usr/local/sbin:/opt/ibm/flightlog/bin:/opt/ibutils/bin:/opt/ibm/spectrum_mpi/jsm_pmix/bin:/opt/puppetlabs/bin:/usr/lpp/mmfs/bin
+PAT_LD_OBJECT_TMPDIR=/tmp/work/lei
+PKG_CONFIG_PATH=/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/c-blosc-1.12.1-q6vbonvkwov7mno5rcss5tngjsdrmmwm/lib/pkgconfig:/autofs/nccs-svm1_sw/summit/.swci/0-core/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/zlib-1.2.11-4v3ticyykh2xcgw5fzltjrfuxkx7ipqh/lib/pkgconfig:/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/darshan-runtime-3.1.7-cnvxicgf5j4ap64qi6v5gxp67hmrjz43/lib/pkgconfig
+PROJWORK=/gpfs/alpine/proj-shared
+PS1=#
+PWD=/gpfs/alpine/scratch/lei/geo111/radical.pilot.sandbox/re.session.login5.lei.018358.0000/pilot.0000
+PYTHONNOUSERSITE=True
+PYTHONPATH=/sw/summit/xalt/1.2.0/site:/sw/summit/xalt/1.2.0/libexec
+PYTHONUSERBASE=.local/summit/anaconda3/5.3.0/3.7
+RADICAL_ENTK_PROFILE=TRUE
+RADICAL_LOG_LVL=DEBUG
+RADICAL_LOG_TGT=radical.log
+RADICAL_PILOT_PROFILE=TRUE
+RADICAL_PROFILE=TRUE
+RADICAL_SAGA_SMT=4
+RADICAL_VERBOSE=DEBUG
+RP_BOOTSTRAP_0_REDIR=True
+SBD_KRB5CCNAME_VAL=
+SHELL=/bin/bash
+SHLVL=7
+SSH_CLIENT=160.39.5.46 38520 22
+SSH_CONNECTION=160.39.5.46 45074 128.219.134.75 22
+SSH_TTY=/dev/pts/3
+TMUX=/tmp/tmux-8851/default,81678,1
+TMUX_PANE=%2
+USER=lei
+WORLDWORK=/gpfs/alpine/world-shared
+XALT_ETC_DIR=/sw/summit/xalt/1.2.0/etc
+XALT_OLCF=1
+XDG_RUNTIME_DIR=/run/user/8851
+XDG_SESSION_ID=566
+XLSF_UIDDIR=/opt/ibm/spectrumcomputing/lsf/10.1.0.9/linux3.10-glibc2.17-ppc64le-csm/lib/uid
+XL_LINKER=/sw/summit/xalt/1.2.0/bin/ld
+_=/usr/bin/env
+_LMFILES_=/sw/summit/modulefiles/site/linux-rhel7-ppc64le/Core/hsi/5.0.2.p5.lua:/sw/summit/modulefiles/site/linux-rhel7-ppc64le/Core/xalt/1.2.0.lua:/sw/summit/modulefiles/site/linux-rhel7-ppc64le/Core/lsf-tools/2.0.lua:/sw/summit/modulefiles/site/linux-rhel7-ppc64le/Core/DefApps.lua:/sw/summit/modulefiles/site/linux-rhel7-ppc64le/Core/gcc/4.8.5.lua:/sw/summit/modulefiles/site/linux-rhel7-ppc64le/gcc/4.8.5/spectrum-mpi/10.3.1.2-20200121.lua:/autofs/nccs-svm1_sw/summit/modulefiles/site/linux-rhel7-ppc64le/spectrum-mpi/10.3.1.2-20200121-tvzx7uj/gcc/4.8.5/darshan-runtime/3.1.7.lua:/autofs/nccs-svm1_sw/summit/modulefiles/site/linux-rhel7-ppc64le/spectrum-mpi/10.3.1.2-20200121-tvzx7uj/gcc/4.8.5/hdf5/1.8.18.lua:/sw/summit/modulefiles/site/linux-rhel7-ppc64le/Core/cuda/10.1.243:/sw/summit/modulefiles/site/linux-rhel7-ppc64le/Core/zlib/1.2.11.lua:/sw/summit/modulefiles/site/linux-rhel7-ppc64le/gcc/4.8.5/sz/1.4.12.3.lua:/sw/summit/modulefiles/site/linux-rhel7-ppc64le/gcc/4.8.5/zfp/0.5.2.lua:/sw/summit/modulefiles/site/linux-rhel7-ppc64le/gcc/4.8.5/c-blosc/1.12.1.lua:/autofs/nccs-svm1_sw/summit/modulefiles/site/linux-rhel7-ppc64le/spectrum-mpi/10.3.1.2-20200121-tvzx7uj/gcc/4.8.5/adios/1.13.1-py2.lua:/sw/summit/modulefiles/site/linux-rhel7-ppc64le/Core/vim/8.1.0338.lua:/sw/summit/modulefiles/site/linux-rhel7-ppc64le/Core/tmux/2.2.lua:/sw/summit/modulefiles/core/python/3.7.0-anaconda3-5.3.0.lua
+_ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXtbImNvbXBpbGVyIl09ImdjYyIsWyJtcGkiXT0ic3BlY3RydW0tbXBpIix9LG1UPXtEZWZBcHBzPXtbImZuIl09Ii9zdy9zdW1taXQvbW9kdWxlZmlsZXMvc2l0ZS9saW51eC1yaGVsNy1wcGM2NGxlL0NvcmUvRGVmQXBwcy5sdWEiLFsiZnVsbE5hbWUiXT0iRGVmQXBwcyIsWyJsb2FkT3JkZXIiXT00LHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09IkRlZkFwcHMiLH0sYWRpb3M9e1siZm4iXT0iL2F1dG9mcy9uY2NzLXN2bTFfc3cvc3VtbWl0L21vZHVs
+_ModuleTable002_=ZWZpbGVzL3NpdGUvbGludXgtcmhlbDctcHBjNjRsZS9zcGVjdHJ1bS1tcGkvMTAuMy4xLjItMjAyMDAxMjEtdHZ6eDd1ai9nY2MvNC44LjUvYWRpb3MvMS4xMy4xLXB5Mi5sdWEiLFsiZnVsbE5hbWUiXT0iYWRpb3MvMS4xMy4xLXB5MiIsWyJsb2FkT3JkZXIiXT0xNCxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJhZGlvcyIsfSxbImMtYmxvc2MiXT17WyJmbiJdPSIvc3cvc3VtbWl0L21vZHVsZWZpbGVzL3NpdGUvbGludXgtcmhlbDctcHBjNjRsZS9nY2MvNC44LjUvYy1ibG9zYy8xLjEyLjEubHVhIixbImZ1bGxOYW1lIl09ImMtYmxvc2MvMS4xMi4xIixbImxvYWRPcmRlciJdPTEzLHByb3BUPXt9LFsic3RhY2tE
+_ModuleTable003_=ZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImMtYmxvc2MiLH0sY3VkYT17WyJmbiJdPSIvc3cvc3VtbWl0L21vZHVsZWZpbGVzL3NpdGUvbGludXgtcmhlbDctcHBjNjRsZS9Db3JlL2N1ZGEvMTAuMS4yNDMiLFsiZnVsbE5hbWUiXT0iY3VkYS8xMC4xLjI0MyIsWyJsb2FkT3JkZXIiXT05LHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImN1ZGEiLH0sWyJkYXJzaGFuLXJ1bnRpbWUiXT17WyJmbiJdPSIvYXV0b2ZzL25jY3Mtc3ZtMV9zdy9zdW1taXQvbW9kdWxlZmlsZXMvc2l0ZS9saW51eC1yaGVsNy1wcGM2NGxlL3NwZWN0cnVtLW1waS8xMC4zLjEuMi0yMDIwMDEyMS10dnp4N3VqL2dj
+_ModuleTable004_=Yy80LjguNS9kYXJzaGFuLXJ1bnRpbWUvMy4xLjcubHVhIixbImZ1bGxOYW1lIl09ImRhcnNoYW4tcnVudGltZS8zLjEuNyIsWyJsb2FkT3JkZXIiXT03LHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImRhcnNoYW4tcnVudGltZSIsfSxnY2M9e1siZm4iXT0iL3N3L3N1bW1pdC9tb2R1bGVmaWxlcy9zaXRlL2xpbnV4LXJoZWw3LXBwYzY0bGUvQ29yZS9nY2MvNC44LjUubHVhIixbImZ1bGxOYW1lIl09ImdjYy80LjguNSIsWyJsb2FkT3JkZXIiXT01LHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImdjYy80LjguNSIsfSxoZGY1PXtbImZuIl09Ii9hdXRvZnMv
+_ModuleTable005_=bmNjcy1zdm0xX3N3L3N1bW1pdC9tb2R1bGVmaWxlcy9zaXRlL2xpbnV4LXJoZWw3LXBwYzY0bGUvc3BlY3RydW0tbXBpLzEwLjMuMS4yLTIwMjAwMTIxLXR2eng3dWovZ2NjLzQuOC41L2hkZjUvMS44LjE4Lmx1YSIsWyJmdWxsTmFtZSJdPSJoZGY1LzEuOC4xOCIsWyJsb2FkT3JkZXIiXT04LHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImhkZjUvMS44LjE4Iix9LGhzaT17WyJmbiJdPSIvc3cvc3VtbWl0L21vZHVsZWZpbGVzL3NpdGUvbGludXgtcmhlbDctcHBjNjRsZS9Db3JlL2hzaS81LjAuMi5wNS5sdWEiLFsiZnVsbE5hbWUiXT0iaHNpLzUuMC4yLnA1IixbImxvYWRPcmRlciJdPTEscHJvcFQ9e30sWyJzdGFj
+_ModuleTable006_=a0RlcHRoIl09MSxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iaHNpIix9LFsibHNmLXRvb2xzIl09e1siZm4iXT0iL3N3L3N1bW1pdC9tb2R1bGVmaWxlcy9zaXRlL2xpbnV4LXJoZWw3LXBwYzY0bGUvQ29yZS9sc2YtdG9vbHMvMi4wLmx1YSIsWyJmdWxsTmFtZSJdPSJsc2YtdG9vbHMvMi4wIixbImxvYWRPcmRlciJdPTMscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MSxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0ibHNmLXRvb2xzIix9LHB5dGhvbj17WyJmbiJdPSIvc3cvc3VtbWl0L21vZHVsZWZpbGVzL2NvcmUvcHl0aG9uLzMuNy4wLWFuYWNvbmRhMy01LjMuMC5sdWEiLFsiZnVsbE5hbWUiXT0icHl0aG9uLzMuNy4wLWFuYWNvbmRhMy01LjMu
+_ModuleTable007_=MCIsWyJsb2FkT3JkZXIiXT0xNyxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJweXRob24vMy43LjAtYW5hY29uZGEzLTUuMy4wIix9LFsic3BlY3RydW0tbXBpIl09e1siZm4iXT0iL3N3L3N1bW1pdC9tb2R1bGVmaWxlcy9zaXRlL2xpbnV4LXJoZWw3LXBwYzY0bGUvZ2NjLzQuOC41L3NwZWN0cnVtLW1waS8xMC4zLjEuMi0yMDIwMDEyMS5sdWEiLFsiZnVsbE5hbWUiXT0ic3BlY3RydW0tbXBpLzEwLjMuMS4yLTIwMjAwMTIxIixbImxvYWRPcmRlciJdPTYscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0ic3BlY3RydW0tbXBpIix9LHN6PXtbImZuIl09Ii9z
+_ModuleTable008_=dy9zdW1taXQvbW9kdWxlZmlsZXMvc2l0ZS9saW51eC1yaGVsNy1wcGM2NGxlL2djYy80LjguNS9zei8xLjQuMTIuMy5sdWEiLFsiZnVsbE5hbWUiXT0ic3ovMS40LjEyLjMiLFsibG9hZE9yZGVyIl09MTEscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0ic3oiLH0sdG11eD17WyJmbiJdPSIvc3cvc3VtbWl0L21vZHVsZWZpbGVzL3NpdGUvbGludXgtcmhlbDctcHBjNjRsZS9Db3JlL3RtdXgvMi4yLmx1YSIsWyJmdWxsTmFtZSJdPSJ0bXV4LzIuMiIsWyJsb2FkT3JkZXIiXT0xNixwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJ0bXV4Iix9LHZpbT17WyJmbiJd
+_ModuleTable009_=PSIvc3cvc3VtbWl0L21vZHVsZWZpbGVzL3NpdGUvbGludXgtcmhlbDctcHBjNjRsZS9Db3JlL3ZpbS84LjEuMDMzOC5sdWEiLFsiZnVsbE5hbWUiXT0idmltLzguMS4wMzM4IixbImxvYWRPcmRlciJdPTE1LHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09InZpbSIsfSx4YWx0PXtbImZuIl09Ii9zdy9zdW1taXQvbW9kdWxlZmlsZXMvc2l0ZS9saW51eC1yaGVsNy1wcGM2NGxlL0NvcmUveGFsdC8xLjIuMC5sdWEiLFsiZnVsbE5hbWUiXT0ieGFsdC8xLjIuMCIsWyJsb2FkT3JkZXIiXT0yLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTEsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09InhhbHQiLH0semZwPXtb
+_ModuleTable010_=ImZuIl09Ii9zdy9zdW1taXQvbW9kdWxlZmlsZXMvc2l0ZS9saW51eC1yaGVsNy1wcGM2NGxlL2djYy80LjguNS96ZnAvMC41LjIubHVhIixbImZ1bGxOYW1lIl09InpmcC8wLjUuMiIsWyJsb2FkT3JkZXIiXT0xMixwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJ6ZnAiLH0semxpYj17WyJmbiJdPSIvc3cvc3VtbWl0L21vZHVsZWZpbGVzL3NpdGUvbGludXgtcmhlbDctcHBjNjRsZS9Db3JlL3psaWIvMS4yLjExLmx1YSIsWyJmdWxsTmFtZSJdPSJ6bGliLzEuMi4xMSIsWyJsb2FkT3JkZXIiXT0xMCxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJ6bGliIix9
+_ModuleTable011_=LH0sbXBhdGhBPXsiL2F1dG9mcy9uY2NzLXN2bTFfc3cvc3VtbWl0L21vZHVsZWZpbGVzL3NpdGUvbGludXgtcmhlbDctcHBjNjRsZS9zcGVjdHJ1bS1tcGkvMTAuMy4xLjItMjAyMDAxMjEtdHZ6eDd1ai9nY2MvNC44LjUiLCIvc3cvc3VtbWl0L21vZHVsZWZpbGVzL3NpdGUvbGludXgtcmhlbDctcHBjNjRsZS9nY2MvNC44LjUiLCIvc3cvc3VtbWl0L21vZHVsZWZpbGVzL3NpdGUvbGludXgtcmhlbDctcHBjNjRsZS9Db3JlIiwiL3N3L3N1bW1pdC9tb2R1bGVmaWxlcy9jb3JlIix9LFsic3lzdGVtQmFzZU1QQVRIIl09Ii9zdy9zdW1taXQvbW9kdWxlZmlsZXMvc2l0ZS9saW51eC1yaGVsNy1wcGM2NGxlL0NvcmU6L3N3L3N1bW1pdC9tb2R1bGVmaWxlcy9jb3JlIix9
+_ModuleTable_Sz_=11
+__Init_Default_Modules=1
+__LMOD_Priority_PATH=/sw/sources/lsf-tools/2.0/summit/bin:-9999;/sw/summit/xalt/1.2.0/bin:-9999
+__LMOD_REF_COUNT_CMAKE_PREFIX_PATH=/autofs/nccs-svm1_sw/summit/.swci/0-core/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/tmux-2.2-z2cgytxdo3rzw643uj2fiwp7iwqbbbwp:1;/autofs/nccs-svm1_sw/summit/.swci/0-core/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/vim-8.1.0338-shbim6fc5yqhqcv6ewywvtbjc6o2fcuo:1;/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/adios-1.13.1-ux5cr5krnt2eytkd34ivmytf7jj64i7p:1;/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/c-blosc-1.12.1-q6vbonvkwov7mno5rcss5tngjsdrmmwm:1;/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/zfp-0.5.2-6ug2rhyxwribif25cwxah2g3lpjf53qy:1;/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/sz-1.4.12.3-gs7uitnsexlvkneqdgcrbjuedtpcqtbt:1;/autofs/nccs-svm1_sw/summit/.swci/0-core/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/zlib-1.2.11-4v3ticyykh2xcgw5fzltjrfuxkx7ipqh:1;/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/hdf5-1.8.18-ddwngazfm5dozvji2sueaz5ye35im4in:1;/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/darshan-runtime-3.1.7-cnvxicgf5j4ap64qi6v5gxp67hmrjz43:1;/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/spectrum-mpi-10.3.1.2-20200121-tvzx7uja3kmwouk4uzfem5ttugc6bkiz:1
+__LMOD_REF_COUNT_CPATH=/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/adios-1.13.1-ux5cr5krnt2eytkd34ivmytf7jj64i7p/include:1;/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/c-blosc-1.12.1-q6vbonvkwov7mno5rcss5tngjsdrmmwm/include:1;/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/zfp-0.5.2-6ug2rhyxwribif25cwxah2g3lpjf53qy/include:1;/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/sz-1.4.12.3-gs7uitnsexlvkneqdgcrbjuedtpcqtbt/include:1;/autofs/nccs-svm1_sw/summit/.swci/0-core/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/zlib-1.2.11-4v3ticyykh2xcgw5fzltjrfuxkx7ipqh/include:1;/sw/summit/cuda/10.1.243/include:1;/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/hdf5-1.8.18-ddwngazfm5dozvji2sueaz5ye35im4in/include:1;/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/spectrum-mpi-10.3.1.2-20200121-tvzx7uja3kmwouk4uzfem5ttugc6bkiz/include:1
+__LMOD_REF_COUNT_LD_LIBRARY_PATH=/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/adios-1.13.1-ux5cr5krnt2eytkd34ivmytf7jj64i7p/lib:1;/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/c-blosc-1.12.1-q6vbonvkwov7mno5rcss5tngjsdrmmwm/lib:1;/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/zfp-0.5.2-6ug2rhyxwribif25cwxah2g3lpjf53qy/lib:1;/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/sz-1.4.12.3-gs7uitnsexlvkneqdgcrbjuedtpcqtbt/lib:1;/autofs/nccs-svm1_sw/summit/.swci/0-core/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/zlib-1.2.11-4v3ticyykh2xcgw5fzltjrfuxkx7ipqh/lib:1;/sw/summit/cuda/10.1.243/lib64:1;/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/hdf5-1.8.18-ddwngazfm5dozvji2sueaz5ye35im4in/lib:1;/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/darshan-runtime-3.1.7-cnvxicgf5j4ap64qi6v5gxp67hmrjz43/lib:1;/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/spectrum-mpi-10.3.1.2-20200121-tvzx7uja3kmwouk4uzfem5ttugc6bkiz/lib:1;/opt/ibm/spectrumcomputing/lsf/10.1.0.9/linux3.10-glibc2.17-ppc64le-csm/lib:1;/opt/ibm/spectrum_mpi/jsm_pmix/lib:1
+__LMOD_REF_COUNT_LIBRARY_PATH=/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/adios-1.13.1-ux5cr5krnt2eytkd34ivmytf7jj64i7p/lib:1;/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/c-blosc-1.12.1-q6vbonvkwov7mno5rcss5tngjsdrmmwm/lib:1;/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/zfp-0.5.2-6ug2rhyxwribif25cwxah2g3lpjf53qy/lib:1;/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/sz-1.4.12.3-gs7uitnsexlvkneqdgcrbjuedtpcqtbt/lib:1;/autofs/nccs-svm1_sw/summit/.swci/0-core/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/zlib-1.2.11-4v3ticyykh2xcgw5fzltjrfuxkx7ipqh/lib:1;/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/hdf5-1.8.18-ddwngazfm5dozvji2sueaz5ye35im4in/lib:1;/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/darshan-runtime-3.1.7-cnvxicgf5j4ap64qi6v5gxp67hmrjz43/lib:1;/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/spectrum-mpi-10.3.1.2-20200121-tvzx7uja3kmwouk4uzfem5ttugc6bkiz/lib:1
+__LMOD_REF_COUNT_LOADEDMODULES=hsi/5.0.2.p5:1;xalt/1.2.0:1;lsf-tools/2.0:1;DefApps:1;gcc/4.8.5:1;spectrum-mpi/10.3.1.2-20200121:1;darshan-runtime/3.1.7:1;hdf5/1.8.18:1;cuda/10.1.243:1;zlib/1.2.11:1;sz/1.4.12.3:1;zfp/0.5.2:1;c-blosc/1.12.1:1;adios/1.13.1-py2:1;vim/8.1.0338:1;tmux/2.2:1;python/3.7.0-anaconda3-5.3.0:1
+__LMOD_REF_COUNT_MANPATH=/sw/summit/python/3.7/anaconda3/5.3.0/share/man:1;/autofs/nccs-svm1_sw/summit/.swci/0-core/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/tmux-2.2-z2cgytxdo3rzw643uj2fiwp7iwqbbbwp/share/man:1;/autofs/nccs-svm1_sw/summit/.swci/0-core/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/vim-8.1.0338-shbim6fc5yqhqcv6ewywvtbjc6o2fcuo/share/man:1;/autofs/nccs-svm1_sw/summit/.swci/0-core/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/zlib-1.2.11-4v3ticyykh2xcgw5fzltjrfuxkx7ipqh/share/man:1;/sw/summit/cuda/10.1.243/doc/man:1;/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/spectrum-mpi-10.3.1.2-20200121-tvzx7uja3kmwouk4uzfem5ttugc6bkiz/share/man:1;/sw/sources/hpss/man:1;/sw/summit/lmod/8.2.10/share/man:1;/opt/ibm/spectrumcomputing/lsf/10.1.0.9/man:1;/opt/puppetlabs/puppet/share/man:1
+__LMOD_REF_COUNT_MODULEPATH=/autofs/nccs-svm1_sw/summit/modulefiles/site/linux-rhel7-ppc64le/spectrum-mpi/10.3.1.2-20200121-tvzx7uj/gcc/4.8.5:1;/sw/summit/modulefiles/site/linux-rhel7-ppc64le/gcc/4.8.5:1;/sw/summit/modulefiles/site/linux-rhel7-ppc64le/Core:1;/sw/summit/modulefiles/core:1
+__LMOD_REF_COUNT_PATH=/sw/sources/lsf-tools/2.0/summit/bin:2;/sw/summit/xalt/1.2.0/bin:1;/sw/summit/python/3.7/anaconda3/5.3.0/bin:1;/autofs/nccs-svm1_sw/summit/.swci/0-core/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/tmux-2.2-z2cgytxdo3rzw643uj2fiwp7iwqbbbwp/bin:1;/autofs/nccs-svm1_sw/summit/.swci/0-core/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/vim-8.1.0338-shbim6fc5yqhqcv6ewywvtbjc6o2fcuo/bin:1;/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/adios-1.13.1-ux5cr5krnt2eytkd34ivmytf7jj64i7p/bin:1;/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/sz-1.4.12.3-gs7uitnsexlvkneqdgcrbjuedtpcqtbt/bin:1;/sw/summit/cuda/10.1.243/bin:1;/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/hdf5-1.8.18-ddwngazfm5dozvji2sueaz5ye35im4in/bin:1;/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/darshan-runtime-3.1.7-cnvxicgf5j4ap64qi6v5gxp67hmrjz43/bin:1;/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/spectrum-mpi-10.3.1.2-20200121-tvzx7uja3kmwouk4uzfem5ttugc6bkiz/bin:1;/usr/bin:5;/usr/sbin:5;/opt/ibm/csm/bin:1;/opt/ibm/spectrumcomputing/lsf/10.1.0.9/linux3.10-glibc2.17-ppc64le-csm/bin:1;/ccs/home/lei/software/summit/conda/summit-entk/erlang-opt_src_22.2/bin:1;/ccs/home/lei/.conda/envs/summit-entk/bin:1;/sw/sources/hpss/bin:1;/opt/ibm/spectrumcomputing/lsf/10.1.0.9/linux3.10-glibc2.17-ppc64le-csm/etc:1;/usr/local/bin:1;/usr/local/sbin:1;/opt/ibm/flightlog/bin:1;/opt/ibutils/bin:1;/opt/ibm/spectrum_mpi/jsm_pmix/bin:1;/opt/puppetlabs/bin:1;/usr/lpp/mmfs/bin:1
+__LMOD_REF_COUNT_PKG_CONFIG_PATH=/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/c-blosc-1.12.1-q6vbonvkwov7mno5rcss5tngjsdrmmwm/lib/pkgconfig:1;/autofs/nccs-svm1_sw/summit/.swci/0-core/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/zlib-1.2.11-4v3ticyykh2xcgw5fzltjrfuxkx7ipqh/lib/pkgconfig:1;/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/darshan-runtime-3.1.7-cnvxicgf5j4ap64qi6v5gxp67hmrjz43/lib/pkgconfig:1
+__LMOD_REF_COUNT_PYTHONPATH=/sw/summit/xalt/1.2.0/site:1;/sw/summit/xalt/1.2.0/libexec:1
+__LMOD_REF_COUNT__LMFILES_=/sw/summit/modulefiles/site/linux-rhel7-ppc64le/Core/hsi/5.0.2.p5.lua:1;/sw/summit/modulefiles/site/linux-rhel7-ppc64le/Core/xalt/1.2.0.lua:1;/sw/summit/modulefiles/site/linux-rhel7-ppc64le/Core/lsf-tools/2.0.lua:1;/sw/summit/modulefiles/site/linux-rhel7-ppc64le/Core/DefApps.lua:1;/sw/summit/modulefiles/site/linux-rhel7-ppc64le/Core/gcc/4.8.5.lua:1;/sw/summit/modulefiles/site/linux-rhel7-ppc64le/gcc/4.8.5/spectrum-mpi/10.3.1.2-20200121.lua:1;/autofs/nccs-svm1_sw/summit/modulefiles/site/linux-rhel7-ppc64le/spectrum-mpi/10.3.1.2-20200121-tvzx7uj/gcc/4.8.5/darshan-runtime/3.1.7.lua:1;/autofs/nccs-svm1_sw/summit/modulefiles/site/linux-rhel7-ppc64le/spectrum-mpi/10.3.1.2-20200121-tvzx7uj/gcc/4.8.5/hdf5/1.8.18.lua:1;/sw/summit/modulefiles/site/linux-rhel7-ppc64le/Core/cuda/10.1.243:1;/sw/summit/modulefiles/site/linux-rhel7-ppc64le/Core/zlib/1.2.11.lua:1;/sw/summit/modulefiles/site/linux-rhel7-ppc64le/gcc/4.8.5/sz/1.4.12.3.lua:1;/sw/summit/modulefiles/site/linux-rhel7-ppc64le/gcc/4.8.5/zfp/0.5.2.lua:1;/sw/summit/modulefiles/site/linux-rhel7-ppc64le/gcc/4.8.5/c-blosc/1.12.1.lua:1;/autofs/nccs-svm1_sw/summit/modulefiles/site/linux-rhel7-ppc64le/spectrum-mpi/10.3.1.2-20200121-tvzx7uj/gcc/4.8.5/adios/1.13.1-py2.lua:1;/sw/summit/modulefiles/site/linux-rhel7-ppc64le/Core/vim/8.1.0338.lua:1;/sw/summit/modulefiles/site/linux-rhel7-ppc64le/Core/tmux/2.2.lua:1;/sw/summit/modulefiles/core/python/3.7.0-anaconda3-5.3.0.lua:1
+__LSF_JOB_TMPDIR__=/tmp/18701.tmpdir
+# -------------------------------------------------------------------
+
+# -------------------------------------------------------------------
+#
+# Running pre_bootstrap_0 command
+# cmd: module unload xl
+#
+#
+# SUCCESS
+#
+# -------------------------------------------------------------------
+
+# -------------------------------------------------------------------
+#
+# Running pre_bootstrap_0 command
+# cmd: module unload xalt
+#
+#
+# SUCCESS
+#
+# -------------------------------------------------------------------
+
+# -------------------------------------------------------------------
+#
+# Running pre_bootstrap_0 command
+# cmd: module unload spectrum-mpi
+#
+
+Inactive Modules:
+  1) adios
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) darshan-runtime/3.1.7     2) hdf5/1.8.18
+
+#
+# SUCCESS
+#
+# -------------------------------------------------------------------
+
+# -------------------------------------------------------------------
+#
+# Running pre_bootstrap_0 command
+# cmd: module load   gcc/6.4.0
+#
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) c-blosc/1.12.1     2) hdf5/1.8.18     3) sz/1.4.12.3     4) zfp/0.5.2
+
+The following have been reloaded with a version change:
+  1) gcc/4.8.5 => gcc/6.4.0
+
+#
+# SUCCESS
+#
+# -------------------------------------------------------------------
+
+# -------------------------------------------------------------------
+#
+# Running pre_bootstrap_0 command
+# cmd: module load   python/3.7.0
+#
+
+The following have been reloaded with a version change:
+  1) python/3.7.0-anaconda3-5.3.0 => python/3.7.0
+
+#
+# SUCCESS
+#
+# -------------------------------------------------------------------
+
+# -------------------------------------------------------------------
+#
+# Running pre_bootstrap_0 command
+# cmd: module load   py-virtualenv/16.0.0
+#
+#
+# SUCCESS
+#
+# -------------------------------------------------------------------
+
+# -------------------------------------------------------------------
+#
+# Running pre_bootstrap_0 command
+# cmd: module load   py-setuptools/40.2.0-py3
+#
+#
+# SUCCESS
+#
+# -------------------------------------------------------------------
+
+# -------------------------------------------------------------------
+#
+# Running pre_bootstrap_0 command
+# cmd: module load   zeromq/4.2.5
+#
+#
+# SUCCESS
+#
+# -------------------------------------------------------------------
+# -------------------------------------------------------------------
+# Touching output tarballs
+# -------------------------------------------------------------------
+create gtod
+++ ./gtod
++ TIME_ZERO=1586153530.201310
++ export TIME_ZERO
++ set +x
++ test -z TRUETRUE
++ PROFILE=bootstrap_0.prof
++ event=bootstrap_0_start
++ msg=
+++ ./gtod
++ epoch=1586153530.241473
+++ awk 'BEGIN{print(1586153530.241473 - 1586153530.201310)}'
++ now=0.040163
++ test -f bootstrap_0.prof
++ echo '#time,name,uid,state,event,msg'
++ printf '%.4f,%s,%s,%s,%s,%s,%s\n' 0.040163 bootstrap_0_start bootstrap_0 MainThread pilot.0000 PMGR_ACTIVE_PENDING ''
++ tee -a bootstrap_0.prof
+0.0402,bootstrap_0_start,bootstrap_0,MainThread,pilot.0000,PMGR_ACTIVE_PENDING,
++ set +x
+VIRTENV : /gpfs/alpine/scratch/lei/geo111/radical.pilot.sandbox/ve.ornl.summit.1.1.1
+VIRTENV : /gpfs/alpine/geo111/scratch/lei/radical.pilot.sandbox/ve.ornl.summit.1.1.1 (normalized)
+PYTHON: /autofs/nccs-svm1_sw/summit/.swci/0-core/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/python-3.7.0-ei3mpdncii74xsn55t5kxpuc46i3oezn/bin/python
+PIP   : /autofs/nccs-svm1_sw/summit/.swci/0-core/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/python-3.7.0-ei3mpdncii74xsn55t5kxpuc46i3oezn/bin/pip --cert /gpfs/alpine/scratch/lei/geo111/radical.pilot.sandbox/re.session.login5.lei.018358.0000/pilot.0000/../cacert.pem
++ test -z TRUETRUE
++ PROFILE=bootstrap_0.prof
++ event=ve_setup_start
++ msg=
+++ ./gtod
++ epoch=1586153530.431746
+++ awk 'BEGIN{print(1586153530.431746 - 1586153530.201310)}'
++ now=0.230436
++ test -f bootstrap_0.prof
++ printf '%.4f,%s,%s,%s,%s,%s,%s\n' 0.230436 ve_setup_start bootstrap_0 MainThread pilot.0000 PMGR_ACTIVE_PENDING ''
++ tee -a bootstrap_0.prof
+0.2304,ve_setup_start,bootstrap_0,MainThread,pilot.0000,PMGR_ACTIVE_PENDING,
++ set +x
+virtenv_create   : TRUE
+virtenv_update   : FALSE
+rp install sources:  radical.utils-1.1.1/ radical.saga-1.1.2/ radical.pilot-1.1.1-devel-no-bulk-cb-hotfix-entk-hangup/
+rp install target : SANDBOX
+rp install lock   : FALSE
+virtenv /gpfs/alpine/geo111/scratch/lei/radical.pilot.sandbox/ve.ornl.summit.1.1.1 exists
++ test -z TRUETRUE
++ PROFILE=bootstrap_0.prof
++ event=ve_activate_start
++ msg=
+++ ./gtod
++ epoch=1586153530.895528
+++ awk 'BEGIN{print(1586153530.895528 - 1586153530.201310)}'
++ now=0.694218
++ test -f bootstrap_0.prof
++ printf '%.4f,%s,%s,%s,%s,%s,%s\n' 0.694218 ve_activate_start bootstrap_0 MainThread pilot.0000 PMGR_ACTIVE_PENDING ''
++ tee -a bootstrap_0.prof
+0.6942,ve_activate_start,bootstrap_0,MainThread,pilot.0000,PMGR_ACTIVE_PENDING,
++ set +x
+PYTHON: /gpfs/alpine/geo111/scratch/lei/radical.pilot.sandbox/ve.ornl.summit.1.1.1/bin/python
+PIP   : /gpfs/alpine/geo111/scratch/lei/radical.pilot.sandbox/ve.ornl.summit.1.1.1/bin/pip --cert /gpfs/alpine/scratch/lei/geo111/radical.pilot.sandbox/re.session.login5.lei.018358.0000/pilot.0000/../cacert.pem
+PYTHON INTERPRETER: /gpfs/alpine/geo111/scratch/lei/radical.pilot.sandbox/ve.ornl.summit.1.1.1/bin/python
+PYTHON_VERSION    : 3.7
+VE_MOD_PREFIX     : /gpfs/alpine/geo111/scratch/lei/radical.pilot.sandbox/ve.ornl.summit.1.1.1/lib/python3.7/site-packages
+PIP installer     : /gpfs/alpine/geo111/scratch/lei/radical.pilot.sandbox/ve.ornl.summit.1.1.1/bin/pip --cert /gpfs/alpine/scratch/lei/geo111/radical.pilot.sandbox/re.session.login5.lei.018358.0000/pilot.0000/../cacert.pem
+PIP version       : pip 20.0.2 from /gpfs/alpine/geo111/scratch/lei/radical.pilot.sandbox/ve.ornl.summit.1.1.1/lib/python3.7/site-packages/pip (python 3.7)
+/gpfs/alpine/scratch/lei/geo111/radical.pilot.sandbox/re.session.login5.lei.018358.0000/bootstrap_0.sh: line 878: export: `/gpfs/alpine/geo111/scratch/lei/radical.pilot.sandbox/ve.ornl.summit.1.1.1/bin:/gpfs/alpine/geo111/scratch/lei/radical.pilot.sandbox/ve.ornl.summit.1.1.1/bin:/sw/sources/lsf-tools/2.0/summit/bin:/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-6.4.0/zeromq-4.2.5-hyfaxk5dcmezj6rhlmz6tcqg2pat53ee/bin:/autofs/nccs-svm1_sw/summit/.swci/0-core/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/py-setuptools-40.2.0-dkreuh4z2ejvm7gmagyol34j7i2xa7zw/bin:/autofs/nccs-svm1_sw/summit/.swci/0-core/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/py-virtualenv-16.0.0-ohsvxc5mf4aornhyrfp4ecea5bzcowon/bin:/autofs/nccs-svm1_sw/summit/.swci/0-core/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/python-3.7.0-ei3mpdncii74xsn55t5kxpuc46i3oezn/bin:/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-6.4.0/hdf5-1.8.18-vkmohchcalzhgsyuprsbbfd2tjezamlt/bin:/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-6.4.0/sz-1.4.12.3-zbfsnwg2wlzfoifslfr2ebn4ecqfdduc/bin:/sw/summit/gcc/6.4.0/bin:/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/darshan-runtime-3.1.7-cnvxicgf5j4ap64qi6v5gxp67hmrjz43/bin:/ccs/home/lei/software/summit/conda/summit-entk/erlang-opt_src_22.2/bin:/autofs/nccs-svm1_sw/summit/.swci/0-core/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/tmux-2.2-z2cgytxdo3rzw643uj2fiwp7iwqbbbwp/bin:/autofs/nccs-svm1_sw/summit/.swci/0-core/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/vim-8.1.0338-shbim6fc5yqhqcv6ewywvtbjc6o2fcuo/bin:/sw/summit/cuda/10.1.243/bin:/usr/bin:/usr/sbin:/opt/ibm/csm/bin:/opt/ibm/spectrumcomputing/lsf/10.1.0.9/linux3.10-glibc2.17-ppc64le-csm/bin:/ccs/home/lei/.conda/envs/summit-entk/bin:/sw/sources/hpss/bin:/opt/ibm/spectrumcomputing/lsf/10.1.0.9/linux3.10-glibc2.17-ppc64le-csm/etc:/usr/local/bin:/usr/local/sbin:/opt/ibm/flightlog/bin:/opt/ibutils/bin:/opt/ibm/spectrum_mpi/jsm_pmix/bin:/opt/puppetlabs/bin:/usr/lpp/mmfs/bin': not a valid identifier
+activated virtenv
+VIRTENV      : /gpfs/alpine/geo111/scratch/lei/radical.pilot.sandbox/ve.ornl.summit.1.1.1
+VE_PYTHONPATH: /autofs/nccs-svm1_sw/summit/.swci/0-core/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/py-setuptools-40.2.0-dkreuh4z2ejvm7gmagyol34j7i2xa7zw/lib/python3.7/site-packages:/autofs/nccs-svm1_sw/summit/.swci/0-core/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/py-virtualenv-16.0.0-ohsvxc5mf4aornhyrfp4ecea5bzcowon/lib/python2.7/site-packages
+VE_MOD_PREFIX: /gpfs/alpine/geo111/scratch/lei/radical.pilot.sandbox/ve.ornl.summit.1.1.1/lib/python3.7/site-packages
+RP_MOD_PREFIX: /gpfs/alpine/geo111/scratch/lei/radical.pilot.sandbox/ve.ornl.summit.1.1.1/rp_install/lib/python3.7/site-packages
+RP_PATH      : /gpfs/alpine/geo111/scratch/lei/radical.pilot.sandbox/ve.ornl.summit.1.1.1/bin
++ test -z TRUETRUE
++ PROFILE=bootstrap_0.prof
++ event=ve_activate_stop
++ msg=
+++ ./gtod
++ epoch=1586153531.963876
+++ awk 'BEGIN{print(1586153531.963876 - 1586153530.201310)}'
++ now=1.76257
++ test -f bootstrap_0.prof
++ printf '%.4f,%s,%s,%s,%s,%s,%s\n' 1.76257 ve_activate_stop bootstrap_0 MainThread pilot.0000 PMGR_ACTIVE_PENDING ''
++ tee -a bootstrap_0.prof
+1.7626,ve_activate_stop,bootstrap_0,MainThread,pilot.0000,PMGR_ACTIVE_PENDING,
++ set +x
+do not update virtenv /gpfs/alpine/geo111/scratch/lei/radical.pilot.sandbox/ve.ornl.summit.1.1.1
++ test -z TRUETRUE
++ PROFILE=bootstrap_0.prof
++ event=rp_install_start
++ msg=
+++ ./gtod
++ epoch=1586153532.010399
+++ awk 'BEGIN{print(1586153532.010399 - 1586153530.201310)}'
++ now=1.80909
++ test -f bootstrap_0.prof
++ printf '%.4f,%s,%s,%s,%s,%s,%s\n' 1.80909 rp_install_start bootstrap_0 MainThread pilot.0000 PMGR_ACTIVE_PENDING ''
++ tee -a bootstrap_0.prof
+1.8091,rp_install_start,bootstrap_0,MainThread,pilot.0000,PMGR_ACTIVE_PENDING,
++ set +x
+Using RADICAL-Pilot install sources ' radical.utils-1.1.1/ radical.saga-1.1.2/ radical.pilot-1.1.1-devel-no-bulk-cb-hotfix-entk-hangup/'
+VE_MOD_PREFIX: /gpfs/alpine/geo111/scratch/lei/radical.pilot.sandbox/ve.ornl.summit.1.1.1/lib/python3.7/site-packages
+VIRTENV      : /gpfs/alpine/geo111/scratch/lei/radical.pilot.sandbox/ve.ornl.summit.1.1.1
+SANDBOX      : /gpfs/alpine/scratch/lei/geo111/radical.pilot.sandbox/re.session.login5.lei.018358.0000/pilot.0000
+VE_LOC_PREFIX: 
+using local install tree
+PYTHONPATH: /gpfs/alpine/scratch/lei/geo111/radical.pilot.sandbox/re.session.login5.lei.018358.0000/pilot.0000/rp_install/lib/python3.7/site-packages::/autofs/nccs-svm1_sw/summit/.swci/0-core/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/py-setuptools-40.2.0-dkreuh4z2ejvm7gmagyol34j7i2xa7zw/lib/python3.7/site-packages:/autofs/nccs-svm1_sw/summit/.swci/0-core/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/py-virtualenv-16.0.0-ohsvxc5mf4aornhyrfp4ecea5bzcowon/lib/python2.7/site-packages
+rp_install: /gpfs/alpine/scratch/lei/geo111/radical.pilot.sandbox/re.session.login5.lei.018358.0000/pilot.0000/rp_install/lib/python3.7/site-packages
+radicalmod: /gpfs/alpine/scratch/lei/geo111/radical.pilot.sandbox/re.session.login5.lei.018358.0000/pilot.0000/rp_install/lib/python3.7/site-packages/radical/
+
+# -------------------------------------------------------------------
+#
+# update radical.utils-1.1.1/ via pip
+# cmd: /gpfs/alpine/geo111/scratch/lei/radical.pilot.sandbox/ve.ornl.summit.1.1.1/bin/pip --cert /gpfs/alpine/scratch/lei/geo111/radical.pilot.sandbox/re.session.login5.lei.018358.0000/pilot.0000/../cacert.pem install  --src '/gpfs/alpine/scratch/lei/geo111/radical.pilot.sandbox/re.session.login5.lei.018358.0000/pilot.0000/rp_install/src' --build '/gpfs/alpine/scratch/lei/geo111/radical.pilot.sandbox/re.session.login5.lei.018358.0000/pilot.0000/rp_install/build' --install-option='--prefix=/gpfs/alpine/scratch/lei/geo111/radical.pilot.sandbox/re.session.login5.lei.018358.0000/pilot.0000/rp_install' --no-deps --no-cache-dir --no-build-isolation radical.utils-1.1.1/
+#
+/gpfs/alpine/geo111/scratch/lei/radical.pilot.sandbox/ve.ornl.summit.1.1.1/lib/python3.7/site-packages/pip/_internal/commands/install.py:244: UserWarning: Disabling all use of wheels due to the use of --build-option / --global-option / --install-option.
+  cmdoptions.check_install_build_global(options)
+DEPRECATION: Location-changing options found in --install-option: ['--prefix'] from command line. This configuration may cause unexpected behavior and is unsupported. pip 20.2 will remove support for this functionality. A possible replacement is using pip-level options like --user, --prefix, --root, and --target. You can find discussion regarding this at https://github.com/pypa/pip/issues/7309.
+Processing ./radical.utils-1.1.1
+Skipping wheel build for radical.utils, due to binaries being disabled for it.
+Installing collected packages: radical.utils
+    Running setup.py install for radical.utils: started
+    Running setup.py install for radical.utils: finished with status 'done'
+Successfully installed radical.utils
+#
+# SUCCESS
+#
+# -------------------------------------------------------------------
+purge install source at radical.utils-1.1.1/
+
+# -------------------------------------------------------------------
+#
+# update radical.saga-1.1.2/ via pip
+# cmd: /gpfs/alpine/geo111/scratch/lei/radical.pilot.sandbox/ve.ornl.summit.1.1.1/bin/pip --cert /gpfs/alpine/scratch/lei/geo111/radical.pilot.sandbox/re.session.login5.lei.018358.0000/pilot.0000/../cacert.pem install  --src '/gpfs/alpine/scratch/lei/geo111/radical.pilot.sandbox/re.session.login5.lei.018358.0000/pilot.0000/rp_install/src' --build '/gpfs/alpine/scratch/lei/geo111/radical.pilot.sandbox/re.session.login5.lei.018358.0000/pilot.0000/rp_install/build' --install-option='--prefix=/gpfs/alpine/scratch/lei/geo111/radical.pilot.sandbox/re.session.login5.lei.018358.0000/pilot.0000/rp_install' --no-deps --no-cache-dir --no-build-isolation radical.saga-1.1.2/
+#
+/gpfs/alpine/geo111/scratch/lei/radical.pilot.sandbox/ve.ornl.summit.1.1.1/lib/python3.7/site-packages/pip/_internal/commands/install.py:244: UserWarning: Disabling all use of wheels due to the use of --build-option / --global-option / --install-option.
+  cmdoptions.check_install_build_global(options)
+DEPRECATION: Location-changing options found in --install-option: ['--prefix'] from command line. This configuration may cause unexpected behavior and is unsupported. pip 20.2 will remove support for this functionality. A possible replacement is using pip-level options like --user, --prefix, --root, and --target. You can find discussion regarding this at https://github.com/pypa/pip/issues/7309.
+Processing ./radical.saga-1.1.2
+Skipping wheel build for radical.saga, due to binaries being disabled for it.
+Installing collected packages: radical.saga
+    Running setup.py install for radical.saga: started
+    Running setup.py install for radical.saga: finished with status 'done'
+Successfully installed radical.saga
+#
+# SUCCESS
+#
+# -------------------------------------------------------------------
+purge install source at radical.saga-1.1.2/
+
+# -------------------------------------------------------------------
+#
+# update radical.pilot-1.1.1-devel-no-bulk-cb-hotfix-entk-hangup/ via pip
+# cmd: /gpfs/alpine/geo111/scratch/lei/radical.pilot.sandbox/ve.ornl.summit.1.1.1/bin/pip --cert /gpfs/alpine/scratch/lei/geo111/radical.pilot.sandbox/re.session.login5.lei.018358.0000/pilot.0000/../cacert.pem install  --src '/gpfs/alpine/scratch/lei/geo111/radical.pilot.sandbox/re.session.login5.lei.018358.0000/pilot.0000/rp_install/src' --build '/gpfs/alpine/scratch/lei/geo111/radical.pilot.sandbox/re.session.login5.lei.018358.0000/pilot.0000/rp_install/build' --install-option='--prefix=/gpfs/alpine/scratch/lei/geo111/radical.pilot.sandbox/re.session.login5.lei.018358.0000/pilot.0000/rp_install' --no-deps --no-cache-dir --no-build-isolation radical.pilot-1.1.1-devel-no-bulk-cb-hotfix-entk-hangup/
+#
+/gpfs/alpine/geo111/scratch/lei/radical.pilot.sandbox/ve.ornl.summit.1.1.1/lib/python3.7/site-packages/pip/_internal/commands/install.py:244: UserWarning: Disabling all use of wheels due to the use of --build-option / --global-option / --install-option.
+  cmdoptions.check_install_build_global(options)
+DEPRECATION: Location-changing options found in --install-option: ['--prefix'] from command line. This configuration may cause unexpected behavior and is unsupported. pip 20.2 will remove support for this functionality. A possible replacement is using pip-level options like --user, --prefix, --root, and --target. You can find discussion regarding this at https://github.com/pypa/pip/issues/7309.
+Processing ./radical.pilot-1.1.1-devel-no-bulk-cb-hotfix-entk-hangup
+Skipping wheel build for radical.pilot, due to binaries being disabled for it.
+Installing collected packages: radical.pilot
+    Running setup.py install for radical.pilot: started
+    Running setup.py install for radical.pilot: finished with status 'done'
+Successfully installed radical.pilot
+#
+# SUCCESS
+#
+# -------------------------------------------------------------------
+purge install source at radical.pilot-1.1.1-devel-no-bulk-cb-hotfix-entk-hangup/
++ test -z TRUETRUE
++ PROFILE=bootstrap_0.prof
++ event=rp_install_stop
++ msg=
+++ ./gtod
++ epoch=1586153543.710562
+++ awk 'BEGIN{print(1586153543.710562 - 1586153530.201310)}'
++ now=13.5093
++ test -f bootstrap_0.prof
++ printf '%.4f,%s,%s,%s,%s,%s,%s\n' 13.5093 rp_install_stop bootstrap_0 MainThread pilot.0000 PMGR_ACTIVE_PENDING ''
++ tee -a bootstrap_0.prof
+13.5093,rp_install_stop,bootstrap_0,MainThread,pilot.0000,PMGR_ACTIVE_PENDING,
++ set +x
++ test -z TRUETRUE
++ PROFILE=bootstrap_0.prof
++ event=ve_setup_stop
++ msg=
+++ ./gtod
++ epoch=1586153543.760307
+++ awk 'BEGIN{print(1586153543.760307 - 1586153530.201310)}'
++ now=13.559
++ test -f bootstrap_0.prof
++ printf '%.4f,%s,%s,%s,%s,%s,%s\n' 13.559 ve_setup_stop bootstrap_0 MainThread pilot.0000 PMGR_ACTIVE_PENDING ''
++ tee -a bootstrap_0.prof
+13.5590,ve_setup_stop,bootstrap_0,MainThread,pilot.0000,PMGR_ACTIVE_PENDING,
++ set +x
++ test -z TRUETRUE
++ PROFILE=bootstrap_0.prof
++ event=ve_activate_start
++ msg=
+++ ./gtod
++ epoch=1586153543.809836
+++ awk 'BEGIN{print(1586153543.809836 - 1586153530.201310)}'
++ now=13.6085
++ test -f bootstrap_0.prof
++ printf '%.4f,%s,%s,%s,%s,%s,%s\n' 13.6085 ve_activate_start bootstrap_0 MainThread pilot.0000 PMGR_ACTIVE_PENDING ''
++ tee -a bootstrap_0.prof
+13.6085,ve_activate_start,bootstrap_0,MainThread,pilot.0000,PMGR_ACTIVE_PENDING,
++ set +x
+verify python viability: /gpfs/alpine/geo111/scratch/lei/radical.pilot.sandbox/ve.ornl.summit.1.1.1/bin/python ... ok
+verify module viability: radical.pilot   ... ok
+verify module viability: radical.saga    ... ok
+verify module viability: radical.utils   ... ok
+verify module viability: pymongo         ... ok
+verify module viability: colorama        ... ok
+verify module viability: hostlist        ... ok
+verify module viability: ntplib          ... ok
+verify module viability: zmq             ... ok
+verify module viability: netifaces       ... ok
+verify module viability: setproctitle    ... ok
+verify module viability: msgpack         ... ok
+verify module viability: future          ... ok
+verify module viability: regex           ... ok
+
+---------------------------------------------------------------------
+
+Python 3.7.0 (default, Oct 12 2018, 15:17:16) 
+[GCC 4.8.5 20150623 (Red Hat 4.8.5-28)] (/gpfs/alpine/geo111/scratch/lei/radical.pilot.sandbox/ve.ornl.summit.1.1.1/bin/python)
+PYTHONPATH: /gpfs/alpine/scratch/lei/geo111/radical.pilot.sandbox/re.session.login5.lei.018358.0000/pilot.0000/rp_install/lib/python3.7/site-packages::/autofs/nccs-svm1_sw/summit/.swci/0-core/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/py-setuptools-40.2.0-dkreuh4z2ejvm7gmagyol34j7i2xa7zw/lib/python3.7/site-packages:/autofs/nccs-svm1_sw/summit/.swci/0-core/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/py-virtualenv-16.0.0-ohsvxc5mf4aornhyrfp4ecea5bzcowon/lib/python2.7/site-packages
+
+  python               : 3.7.0
+  pythonpath           : /gpfs/alpine/scratch/lei/geo111/radical.pilot.sandbox/re.session.login5.lei.018358.0000/pilot.0000/rp_install/lib/python3.7/site-packages::/autofs/nccs-svm1_sw/summit/.swci/0-core/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/py-setuptools-40.2.0-dkreuh4z2ejvm7gmagyol34j7i2xa7zw/lib/python3.7/site-packages:/autofs/nccs-svm1_sw/summit/.swci/0-core/opt/spack/20180914/linux-rhel7-ppc64le/gcc-4.8.5/py-virtualenv-16.0.0-ohsvxc5mf4aornhyrfp4ecea5bzcowon/lib/python2.7/site-packages
+  virtualenv           : /gpfs/alpine/geo111/scratch/lei/radical.pilot.sandbox/ve.ornl.summit.1.1.1
+
+  radical.pilot        : 1.1.1-devel_no_bulk_cb@hotfix-entk_hangup
+  radical.saga         : 1.1.2
+  radical.utils        : 1.1.1
+
+RU: 1.1.1 /gpfs/alpine/scratch/lei/geo111/radical.pilot.sandbox/re.session.login5.lei.018358.0000/pilot.0000/rp_install/lib/python3.7/site-packages/radical/utils/__init__.py
+RS: 1.1.2 /gpfs/alpine/scratch/lei/geo111/radical.pilot.sandbox/re.session.login5.lei.018358.0000/pilot.0000/rp_install/lib/python3.7/site-packages/radical/saga/__init__.py
+RP: 1.1.1-devel_no_bulk_cb@hotfix-entk_hangup /gpfs/alpine/scratch/lei/geo111/radical.pilot.sandbox/re.session.login5.lei.018358.0000/pilot.0000/rp_install/lib/python3.7/site-packages/radical/pilot/__init__.py
+install ok!
+
+---------------------------------------------------------------------
+
+
+# -------------------------------------------------------------------
+# Launching radical-pilot-agent 
+# CMDLINE: /gpfs/alpine/geo111/scratch/lei/radical.pilot.sandbox/ve.ornl.summit.1.1.1/bin/python /gpfs/alpine/scratch/lei/geo111/radical.pilot.sandbox/re.session.login5.lei.018358.0000/pilot.0000/rp_install/bin/radical-pilot-agent
+ntphost: 46.101.140.169
+ping: socket: Operation not permitted
++ test -z TRUETRUE
++ PROFILE=bootstrap_0.prof
++ event=sync_rel
++ msg=agent.0
+++ ./gtod
++ epoch=1586153548.931211
+++ awk 'BEGIN{print(1586153548.931211 - 1586153530.201310)}'
++ now=18.7299
++ test -f bootstrap_0.prof
++ printf '%.4f,%s,%s,%s,%s,%s,%s\n' 18.7299 sync_rel bootstrap_0 MainThread pilot.0000 PMGR_ACTIVE_PENDING agent.0
++ tee -a bootstrap_0.prof
+18.7299,sync_rel,bootstrap_0,MainThread,pilot.0000,PMGR_ACTIVE_PENDING,agent.0
++ set +x
+.................................................+ test -z TRUETRUE
++ PROFILE=bootstrap_0.prof
++ event=killme
++ msg='2020-04-06 02:14:56.231'
+++ ./gtod
++ epoch=1586153696.267097
+++ awk 'BEGIN{print(1586153696.267097 - 1586153530.201310)}'
++ now=166.066
++ test -f bootstrap_0.prof
++ printf '%.4f,%s,%s,%s,%s,%s,%s\n' 166.066 killme bootstrap_0 MainThread pilot.0000 PMGR_ACTIVE_PENDING '2020-04-06 02:14:56.231'
++ tee -a bootstrap_0.prof
+166.0660,killme,bootstrap_0,MainThread,pilot.0000,PMGR_ACTIVE_PENDING,2020-04-06 02:14:56.231
++ set +x
++ test -z TRUETRUE
++ PROFILE=bootstrap_0.prof
++ event=sigterm
++ msg='2020-04-06 02:14:56.283'
+++ ./gtod
++ epoch=1586153696.321514
+++ awk 'BEGIN{print(1586153696.321514 - 1586153530.201310)}'
++ now=166.12
++ test -f bootstrap_0.prof
++ printf '%.4f,%s,%s,%s,%s,%s,%s\n' 166.12 sigterm bootstrap_0 MainThread pilot.0000 PMGR_ACTIVE_PENDING '2020-04-06 02:14:56.283'
++ tee -a bootstrap_0.prof
+166.1200,sigterm,bootstrap_0,MainThread,pilot.0000,PMGR_ACTIVE_PENDING,2020-04-06 02:14:56.283
++ set +x
+send SIGTERM to 58026 (56346)
+COND start 'kill -0  58026' (I: 1 T: 30)
+/gpfs/alpine/scratch/lei/geo111/radical.pilot.sandbox/re.session.login5.lei.018358.0000/bootstrap_0.sh: line 247: 58026 Terminated              ./bootstrap_2.sh 'agent.0' > agent.0.bootstrap_2.out 2> agent.0.bootstrap_2.err
+/gpfs/alpine/scratch/lei/geo111/radical.pilot.sandbox/re.session.login5.lei.018358.0000/bootstrap_0.sh: line 260: kill: (58026) - No such process
+COND failed (1)
+agent 58026 is final
+agent 58026 is final (143)
++ test -z TRUETRUE
++ PROFILE=bootstrap_0.prof
++ event=agent_final
++ msg='58026:143 2020-04-06 02:14:57.382'
+++ ./gtod
++ epoch=1586153697.418761
+++ awk 'BEGIN{print(1586153697.418761 - 1586153530.201310)}'
++ now=167.217
++ test -f bootstrap_0.prof
++ printf '%.4f,%s,%s,%s,%s,%s,%s\n' 167.217 agent_final bootstrap_0 MainThread pilot.0000 PMGR_ACTIVE_PENDING '58026:143 2020-04-06 02:14:57.382'
++ tee -a bootstrap_0.prof
+167.2170,agent_final,bootstrap_0,MainThread,pilot.0000,PMGR_ACTIVE_PENDING,58026:143 2020-04-06 02:14:57.382
++ set +x
+
+# -------------------------------------------------------------------
+# CLEANUP: 
+#
++ test -z TRUETRUE
++ PROFILE=bootstrap_0.prof
++ event=cleanup_start
++ msg=
+++ ./gtod
++ epoch=1586153697.465718
+++ awk 'BEGIN{print(1586153697.465718 - 1586153530.201310)}'
++ now=167.264
++ test -f bootstrap_0.prof
++ printf '%.4f,%s,%s,%s,%s,%s,%s\n' 167.264 cleanup_start bootstrap_0 MainThread pilot.0000 PMGR_ACTIVE_PENDING ''
++ tee -a bootstrap_0.prof
+167.2640,cleanup_start,bootstrap_0,MainThread,pilot.0000,PMGR_ACTIVE_PENDING,
++ set +x
++ test -z TRUETRUE
++ PROFILE=bootstrap_0.prof
++ event=cleanup_stop
++ msg=
+++ ./gtod
++ epoch=1586153697.513246
+++ awk 'BEGIN{print(1586153697.513246 - 1586153530.201310)}'
++ now=167.312
++ test -f bootstrap_0.prof
++ printf '%.4f,%s,%s,%s,%s,%s,%s\n' 167.312 cleanup_stop bootstrap_0 MainThread pilot.0000 PMGR_ACTIVE_PENDING ''
++ tee -a bootstrap_0.prof
+167.3120,cleanup_stop,bootstrap_0,MainThread,pilot.0000,PMGR_ACTIVE_PENDING,
++ set +x
+#
+# -------------------------------------------------------------------
+
+# -------------------------------------------------------------------
+#
+# Mark final profiling entry ...
++ test -z TRUETRUE
++ PROFILE=bootstrap_0.prof
++ event=bootstrap_0_stop
++ msg=
+++ ./gtod
++ epoch=1586153697.569341
+++ awk 'BEGIN{print(1586153697.569341 - 1586153530.201310)}'
++ now=167.368
++ test -f bootstrap_0.prof
++ printf '%.4f,%s,%s,%s,%s,%s,%s\n' 167.368 bootstrap_0_stop bootstrap_0 MainThread pilot.0000 PMGR_ACTIVE_PENDING ''
++ tee -a bootstrap_0.prof
+167.3680,bootstrap_0_stop,bootstrap_0,MainThread,pilot.0000,PMGR_ACTIVE_PENDING,
++ set +x
++ test -z TRUETRUE
++ PROFILE=bootstrap_0.prof
++ event=END
++ msg=
+++ ./gtod
++ epoch=1586153697.616586
+++ awk 'BEGIN{print(1586153697.616586 - 1586153530.201310)}'
++ now=167.415
++ test -f bootstrap_0.prof
++ printf '%.4f,%s,%s,%s,%s,%s,%s\n' 167.415 END bootstrap_0 MainThread pilot.0000 PMGR_ACTIVE_PENDING ''
++ tee -a bootstrap_0.prof
+167.4150,END,bootstrap_0,MainThread,pilot.0000,PMGR_ACTIVE_PENDING,
++ set +x
+#
+# -------------------------------------------------------------------
+
+# -------------------------------------------------------------------
+#
+# We wait for some seconds for the FS to flush profiles.
+# Success is assumed when all profiles end with a 'END' event.
+#
+# -------------------------------------------------------------------
+delay profile sync @ 1: 21 != 7
+delay profile sync @ 2: 21 != 7
+delay profile sync @ 3: 21 != 7
+delay profile sync @ 4: 21 != 7
+abort profile sync @ 5: 21 != 7
+nprofs 21 =? nend 7
+Mon Apr  6 02:15:01 EDT 2020
+
+# -------------------------------------------------------------------
+#
+# Tarring profiles ...
+-rw-rw-r-- 1 lei lei 7984 Apr  6 02:15 pilot.0000.prof.tgz
+#
+# -------------------------------------------------------------------
+
+# -------------------------------------------------------------------
+#
+# Tarring logfiles ...
+tar: radical.log: file changed as we read it

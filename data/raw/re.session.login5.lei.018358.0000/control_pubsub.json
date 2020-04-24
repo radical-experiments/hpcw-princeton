@@ -1,0 +1,17 @@
+{
+    "bulk_size": 0,
+    "channel": "control_pubsub",
+    "cmgr": "cmgr.0000",
+    "heartbeat": {
+        "addr_pub": "tcp://10.134.0.35:40471",
+        "addr_sub": "tcp://10.134.0.35:37977",
+        "interval": 1.0,
+        "timeout": 60.0
+    },
+    "kind": "pubsub",
+    "log_level": "error",
+    "path": "/gpfs/alpine/geo111/world-shared/lei/entk/re.session.login5.lei.018358.0000",
+    "sid": "re.session.login5.lei.018358.0000",
+    "stall_hwm": 1,
+    "uid": "control_pubsub"
+}

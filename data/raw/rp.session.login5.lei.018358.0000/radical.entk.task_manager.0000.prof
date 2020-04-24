@@ -1,0 +1,25 @@
+#time,event,comp,thread,uid,state,msg
+1586153571.9972022,sync_abs,radical.entk.task_manager.0000,MainThread,,,login5.summit.olcf.ornl.gov:10.134.0.35:1586153571.9967153:1586153572.0772393:ntp
+1586153572.0132155,tmgr_create,radical.entk.task_manager.0000,MainThread,task_manager.0000,,
+1586153572.0133948,creating tmgr process,radical.entk.task_manager.0000,MainThread,task_manager.0000,,
+1586153572.0384057,starting tmgr process,radical.entk.task_manager.0000,MainThread,task_manager.0000,,
+1586153572.0573146,hbeat_create,radical.entk.task_manager.0000,MainThread,task_manager.0000,,
+1586153572.0574205,tmgr process started,radical.entk.task_manager.0000,MainThread,task_manager.0000,,
+1586153572.0576022,starting heartbeat thread,radical.entk.task_manager.0000,MainThread,task_manager.0000,,
+1586153572.0579643,hbeat_start,radical.entk.task_manager.0000,heartbeat,task_manager.0000,,
+1586153572.0644069,tmgr infrastructure setup done,radical.entk.task_manager.0000,MainThread,task_manager.0000,,
+1586153579.9760692,cud_create,radical.entk.task_manager.0000,Thread-12,task.0000,,
+1586153579.9761882,cud from task - done,radical.entk.task_manager.0000,Thread-12,task.0000,,
+1586153579.9816964,advance,radical.entk.task_manager.0000,Thread-12,task.0000,SUBMITTING,stage.0000
+1586153579.9820797,pub_sync,radical.entk.task_manager.0000,Thread-12,task.0000,SUBMITTING,stage.0000
+1586153580.0244455,sync,radical.entk.task_manager.0000,Thread-12,task.0000,SUBMITTING,stage.0000
+1586153678.0989010,task_create,radical.entk.task_manager.0000,Thread-17,task.0000,,
+1586153678.0990644,task_created,radical.entk.task_manager.0000,Thread-17,task.0000,,
+1586153678.0993447,advance,radical.entk.task_manager.0000,Thread-17,task.0000,EXECUTED,stage.0000
+1586153678.0998240,pub_sync,radical.entk.task_manager.0000,Thread-17,task.0000,EXECUTED,stage.0000
+1586153678.1293812,sync,radical.entk.task_manager.0000,Thread-17,task.0000,EXECUTED,stage.0000
+1586153680.4796371,tmgr_term,radical.entk.task_manager.0000,MainThread,task_manager.0000,,
+1586153690.4396374,END,radical.entk.task_manager.0000,MainThread,,,
+1586153690.4454560,tmgr_term,radical.entk.task_manager.0000,MainThread,task_manager.0000,,
+1586153692.3116319,hbeat_stop,radical.entk.task_manager.0000,heartbeat,task_manager.0000,,
+1586153692.3123236,hbeat_term,radical.entk.task_manager.0000,MainThread,task_manager.0000,,

@@ -1,0 +1,7 @@
+#time,event,comp,thread,uid,state,msg
+1586153573.3940861,sync_abs,umgr_scheduling_queue,MainThread,,,login5.summit.olcf.ornl.gov:10.134.0.35:1586153573.3937104:1586153573.4742343:ntp
+1586153573.3978105,bridge_start,umgr_scheduling_queue,MainThread,umgr_scheduling_queue,,
+#time,event,comp,thread,uid,state,msg
+1586153573.3991172,sync_abs,umgr_scheduling_queue,MainThread,,,login5.summit.olcf.ornl.gov:10.134.0.35:1586153573.398988:1586153573.479512:ntp
+1586153573.3991566,init3,umgr_scheduling_queue,MainThread,umgr_scheduling_queue,,/gpfs/alpine/geo111/world-shared/lei/entk/re.session.login5.lei.018358.0000
+1586153749.6141250,term,umgr_scheduling_queue,Thread-2,umgr_scheduling_queue,,

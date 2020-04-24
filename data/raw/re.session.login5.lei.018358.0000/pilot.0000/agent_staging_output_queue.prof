@@ -1,0 +1,6 @@
+#time,event,comp,thread,uid,state,msg
+1586153555.8749530,sync_abs,agent_staging_output_queue,MainThread,,,batch5.summit.olcf.ornl.gov:10.134.0.45:1586153555.8746216:1586153555.9551456:ntp
+1586153555.8787522,bridge_start,agent_staging_output_queue,MainThread,agent_staging_output_queue,,
+#time,event,comp,thread,uid,state,msg
+1586153555.8798862,sync_abs,agent_staging_output_queue,MainThread,,,batch5.summit.olcf.ornl.gov:10.134.0.45:1586153555.8797758:1586153555.9602997:ntp
+1586153555.8799229,init3,agent_staging_output_queue,MainThread,agent_staging_output_queue,,/gpfs/alpine/geo111/scratch/lei/radical.pilot.sandbox/re.session.login5.lei.018358.0000/pilot.0000

@@ -1,0 +1,14 @@
+#time,event,comp,thread,uid,state,msg
+1586153563.7928970,sync_abs,update.0000,MainThread,,,batch5.summit.olcf.ornl.gov:10.134.0.45:1586153563.7925603:1586153563.8730843:ntp
+1586153563.7944033,comp_start,update.0000,MainThread,update.0000,,
+#time,event,comp,thread,uid,state,msg
+1586153563.9401863,sync_abs,update.0000,MainThread,,,batch5.summit.olcf.ornl.gov:10.134.0.45:1586153563.9400656:1586153564.0205896:ntp
+1586153563.9402468,init1,update.0000,MainThread,update.0000,,/gpfs/alpine/geo111/scratch/lei/radical.pilot.sandbox/re.session.login5.lei.018358.0000/pilot.0000
+1586153564.7679658,component_init,update.0000,Thread-1,,,
+1586153565.9010231,update_pushed,update.0000,Thread-4,,,bulk size: 1
+1586153606.0840166,update_pushed,update.0000,Thread-3,,,bulk size: 1
+1586153608.0683515,update_pushed,update.0000,Thread-4,,,bulk size: 3
+1586153675.3905954,update_pushed,update.0000,Thread-3,,,bulk size: 1
+1586153677.5074646,update_pushed,update.0000,Thread-4,,,bulk size: 2
+1586153692.7991152,component_final,update.0000,Thread-2,,,
+1586153692.7991509,END,update.0000,Thread-2,,,
