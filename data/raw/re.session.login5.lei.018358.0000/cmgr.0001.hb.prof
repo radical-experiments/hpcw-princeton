@@ -1,4 +1,0 @@
-#time,event,comp,thread,uid,state,msg
-1586145136.0306876,sync_abs,cmgr.0001.hb,MainThread,,,login5.summit.olcf.ornl.gov:10.134.0.35:1586145136.0303597:1586145136.0375068:ntp
-1586145136.0307262,init3,cmgr.0001.hb,MainThread,cmgr.0001.hb,,/gpfs/alpine/geo111/world-shared/lei/entk/re.session.login5.lei.018358.0000
-1586153694.3761053,term,cmgr.0001.hb,MainThread,cmgr.0001.hb,,
