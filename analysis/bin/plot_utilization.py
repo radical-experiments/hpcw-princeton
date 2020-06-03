@@ -123,13 +123,16 @@ ORDERED_KEYS_2 = ['rp_overhead', 'rp_busy', 'rp_idle']
 # name the individual contributions (so, sans totals).  Also, `p_uexec` was
 # meanwhile replaced by the different unit contributions + `p_idle`.  Also,
 # we have a global `p_setup` now.
-keys  = PILOT_DURATIONS.keys() + UNIT_DURATIONS.keys() + DERIVED_DURATIONS
+keys  = list(PILOT_DURATIONS.keys()) + list(UNIT_DURATIONS.keys()) + DERIVED_DURATIONS
 keys  = [key for key in keys if 'total'    not in key]
 keys  = [key for key in keys if 'p_uexec'  not in key]
 keys  = [key for key in keys if 'p_setup_' not in key]
 
 # make sure we can use the ORDERED set if needed.
 assert(len(ORDERED_KEYS) == len(keys))
+
+def update_ticks(x, pos):
+    return int(x/4)
 
 def get_utilization_durations(sources, version):
 
@@ -155,7 +158,7 @@ def get_utilization_durations(sources, version):
 
       # print
       # print '-----------------------------------------------------------'
-        print src
+        print(src)
 
         session = ra.Session(src, 'radical.pilot')
         pilots  = session.filter(etype='pilot', inplace=False)
@@ -213,7 +216,7 @@ def get_utilization_durations(sources, version):
                     dur = pilot.duration(event=PILOT_DURATIONS[dname])
                     parts += dur
                 except Exception as e:
-                    print 'WARN: miss %s: %s' % (dname, e)
+                    print('WARN: miss %s: %s' % (dname, e))
                     dur = 0.0
                     raise
                 utilization[sid][dname] += dur * psize
